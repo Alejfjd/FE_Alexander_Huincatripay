@@ -9,8 +9,33 @@
 </head>
 <body class="d-flex justify-content-center align-items-center vh-100">
 
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <h2 class="text-center mb-4">Confirme su correo para la compra</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="correo" placeholder="Correo Electrónico">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-mQFAAF4nxVN8mGBiCL/Zx6WUk3FwZcEjWNnzoq6UHc01f/d2JT8JFp5sTo/Gi+4J" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-QqI12tgr1l1xH+AZv5B3vGtOfm8htJktw9W94jBfACjwNfABwKG3FgF2j4/RYahD" crossorigin="anonymous"></script>
     <div class="container">
-        <h1 class="mb-4">Formulario de Pago</h1>
+        <h1 class="mb-4">Pago mediante PayPal</h1>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
             <input type="hidden" name="cmd" value="_s-xclick">
             <input type="hidden" name="hosted_button_id" value="TU_ID_DE_BOTÓN_PAYPAL">
