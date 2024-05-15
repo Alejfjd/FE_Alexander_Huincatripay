@@ -6,6 +6,9 @@ body{
     background-color: black;
     font-family: 'Times New Roman', Times, serif;
 }
-.navbar navbar-expand-lg navbar-dark{
+.card-body{
     font-family: 'Times New Roman', Times, serif;
+}
+.alert{
+    text-align: center;
 }
